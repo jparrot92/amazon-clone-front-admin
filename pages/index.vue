@@ -79,7 +79,6 @@ export default {
   async asyncData({ $axios }) {
     try {
       const response = await $axios.$get('http://localhost:3000/api/products')
-      console.log(response)
       return {
         products: response.products,
       }
