@@ -63,14 +63,8 @@ export default {
     async onAddCategory() {
       try {
         const data = { type: this.type }
-        const response = await this.$axios.$post(
-          'http://localhost:3000/api/categories',
-          data
-        )
-
-        if (response.status) {
-          this.categories.push(data)
-        }
+        await this.$axios.$post('http://localhost:3000/api/categories', data)
+        this.categories.push(data)
       } catch (err) {
         // eslint-disable-next-line no-console
         console.log(err)
