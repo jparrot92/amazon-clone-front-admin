@@ -66,7 +66,7 @@ export default {
     try {
       const response = await $axios.$get('http://localhost:3000/api/owners')
       return {
-        owners: response.owners,
+        owners: response.data,
       }
     } catch (err) {
       // eslint-disable-next-line no-console

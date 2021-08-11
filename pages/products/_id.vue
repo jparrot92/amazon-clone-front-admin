@@ -129,9 +129,9 @@ export default {
       ])
 
       return {
-        categories: catResponse.categories,
-        owners: ownerResponse.owners,
-        product: productResponse.product,
+        categories: catResponse.data,
+        owners: ownerResponse.data,
+        product: productResponse.data,
       }
     } catch (err) {
       // eslint-disable-next-line no-console

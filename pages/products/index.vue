@@ -122,8 +122,8 @@ export default {
       ])
 
       return {
-        categories: catResponse.categories,
-        owners: ownerResponse.owners,
+        categories: catResponse.data,
+        owners: ownerResponse.data,
       }
     } catch (err) {
       // eslint-disable-next-line no-console

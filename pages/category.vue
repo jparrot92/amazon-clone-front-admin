@@ -47,7 +47,7 @@ export default {
     try {
       const response = await $axios.$get('http://localhost:3000/api/categories')
       return {
-        categories: response.categories,
+        categories: response.data,
       }
     } catch (err) {
       // eslint-disable-next-line no-console

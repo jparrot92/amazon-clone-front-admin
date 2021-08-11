@@ -93,7 +93,7 @@ export default {
     try {
       const response = await $axios.$get('http://localhost:3000/api/products')
       return {
-        products: response.products,
+        products: response.data,
       }
     } catch (err) {}
   },
